@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Add Food | Restaurant Java</title>
+    <link rel="stylesheet" type="text/css" href="Style\style.css">
+    <script src="javascript.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/5787/5787016.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="admin-insert-bar">
+    </div>
+    <div class="admin-insert-bar2">
+    </div>
+    <div class="admin-insert">
+        <form action="insertFood.php" method="post" enctype="multipart/form-data">
+            <h1>Add Food</h1>
+            <label>Food ID: </label>
+            <input type="text" name="foodid" required="required">
+            <br><br>
+
+            <label>Food Name: </label>
+            <input type="text" name="foodname" required="required">
+            <br><br>
+
+            <label>Price: </label>
+            <input type="text" name="foodprice" required="required">
+            <br><br>
+
+            <label>Category: </label>
+            <input type="text" name="foodcategory" required="required">
+            <br><br>
+
+            <label>Food Image: </label>
+            <input type="file" name ="uploadimage">
+            <br><br>
+
+            <input type="submit" value="Add Food">
+            <button onclick="window.location.href='viewFood.php'">Cancel</button>
+        </form>
+    </div>
+</body>
+</html>

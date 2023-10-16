@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Add Admin | Restaurant Java</title>
+    <link rel="stylesheet" type="text/css" href="Style\style.css">
+    <script src="javascript.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/5787/5787016.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="admin-insert-bar">
+    </div>
+    <div class="admin-insert-bar2">
+    </div>
+    <div class="admin-insert">
+        <form action="insertAdmin.php" method="post" enctype="multipart/form-data">
+            <h3>Restaurant Java Management System</h3>
+            <h1>Add Admin</h1>
+            <label>Admin ID: </label>
+            <input type="text" name="adminid" required="required">
+            <br><br>
+
+            <label>Admin First Name: </label>
+            <input type="text" name="adminfname" required="required">
+            <br><br>
+
+            <label>Admin Last Name: </label>
+            <input type="text" name="adminlname" required="required">
+            <br><br>
+
+            <label>Admin Email: </label>
+            <input type="text" name="adminemail" required="required">
+            <br><br>
+
+            <label>Admin Phone Number: </label>
+            <input type="text" name="adminphone" required="required">
+            <br><br>
+
+            <label>Admin Home Address: </label>
+            <input type="text" name="adminaddress" required="required">
+            <br><br>
+
+            <label>Admin PASSWORD: </label>
+            <input type="text" name="adminpassword" required="required">
+            <br><br>
+            
+            <input type="submit" value="Add Admin">
+            <button onclick="window.location.href='viewAdmin.php'">Cancel</button>
+        </form>
+    </div>
+</body>
+</html>
